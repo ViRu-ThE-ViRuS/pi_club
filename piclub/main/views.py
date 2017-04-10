@@ -9,3 +9,6 @@ def index(request):
 
 def login(request):
     return render(request, 'main/login.html')
+
+def sign_up(request):
+    return render(request, 'main/sign_up.html')

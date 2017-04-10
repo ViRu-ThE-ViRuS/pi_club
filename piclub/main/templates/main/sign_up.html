@@ -37,13 +37,19 @@
     }
 
     .form-signin input[type="email"] {
-        margin-bottom: -1px;
+        margin-bottom: 1px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .form-signin input[type="text"] {
+        margin-bottom: 1px;
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
     }
 
     .form-signin input[type="password"] {
-        margin-bottom: 10px;
+        margin: 10px 0px 5px 0px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
     }
@@ -53,17 +59,27 @@
 <div class="container">
 
     <form class="form-signin">
-        <h2 class="form-signin-heading">Please sign in</h2>
+        <h2 class="form-signin-heading">Please sign up</h2>
+        
         <label for="inputEmail" class="sr-only">Email address</label>
         <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+
+        <label for="inputName" class="sr-only">Name</label>
+        <input type="text" id="inputEmail" class="form-control" placeholder="Name" required autofocus>
+
+        <label for="inputClass" class="sr-only">Class</label>
+        <input type="text" id="inputClass" class="form-control" placeholder="Class" required autofocus>
+
+        <label for="inputSection" class="sr-only">Section</label>
+        <input type="text" id="inputSection" class="form-control" placeholder="Section" required autofocus>
+        
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        <div class="checkbox">
-            <label>
-            <input type="checkbox" value="remember-me"> Remember me
-          </label>
-        </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+
+        <label for="inputPasswordConf" class="sr-only">Confirm Password</label>
+        <input type="password" id="inputPasswordConf" class="form-control" placeholder="Confirm Password" required>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
     </form>
 
 </div>
