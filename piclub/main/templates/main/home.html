@@ -175,11 +175,11 @@
         <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+        <div class="item active" style="background-image: 'dps.jpg'">
+            <img class="first-slide" src="{% static 'res/dps.jpg' %}" alt="First slide">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>Example headline.</h1>
+                    <h1>Pi SQUAD</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat ad vitae nobis quaerat nam unde voluptatum,
                         quisquam perferendis illo nemo quas debitis, sint doloremque sequi! Ea ad, obcaecati? Voluptas, repellat..</p>
                     <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
@@ -355,15 +355,15 @@
 <script>
     /*!
 
-                        Holder - client side image placeholders
-                        Version 2.6.0+51ebp
-                        © 2015 Ivan Malopinsky - http://imsky.co
+                            Holder - client side image placeholders
+                            Version 2.6.0+51ebp
+                            © 2015 Ivan Malopinsky - http://imsky.co
 
-                        Site:     http://holderjs.com
-                        Issues:   https://github.com/imsky/holder/issues
-                        License:  http://opensource.org/licenses/MIT
+                            Site:     http://holderjs.com
+                            Issues:   https://github.com/imsky/holder/issues
+                            License:  http://opensource.org/licenses/MIT
 
-                        */
+                            */
     ! function (a, b) {
         "object" == typeof exports && "object" == typeof module ? module.exports = b() : "function" == typeof define &&
             define.amd ? define(b) : "object" == typeof exports ? exports.Holder = b() : a.Holder = b()
