@@ -12,5 +12,5 @@ def login(request):
 def sign_up(request):
     return render(request, 'main/sign_up.html')
 
-# def dps_redirect(request):
-#     return redirect(r'www.dpsgurgaon.org')
+def dps_redirect(request):
+    return redirect('www.dpsgurgaon.org')
