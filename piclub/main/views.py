@@ -1,16 +1,19 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 
-# Create your views here.
+# redirect to main page
 def index(request):
     return render(request, 'main/home.html')
 
+# redirect to login page
 def login(request):
     return render(request, 'main/login.html')
 
+# redirect to sign up page
 def sign_up(request):
     return render(request, 'main/sign_up.html')
 
-def dps_redirect(request):
-    return redirect('www.dpsgurgaon.org')
+# redirect to about page
+def about(request):
+    return render(request, 'main/about.html')
