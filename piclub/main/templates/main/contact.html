@@ -54,6 +54,53 @@
         .navbar-wrapper .navbar .container {
             width: auto;
         }
+
+        .form-signin {
+            max-width: 330px;
+            padding: 15px;
+            margin: 0 auto;
+        }
+
+        .form-signin .form-signin-heading,
+        .form-signin .checkbox {
+            margin-bottom: 10px;
+        }
+
+        .form-signin .checkbox {
+            font-weight: normal;
+        }
+
+        .form-signin .form-control {
+            position: relative;
+            height: auto;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .form-signin .form-control:focus {
+            z-index: 2;
+        }
+
+        .form-signin input[type="email"] {
+            margin-bottom: 1px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        .form-signin input[type="text"] {
+            margin-bottom: 1px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        .form-signin input[type="password"] {
+            margin: 10px 0px 5px 0px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
     </style>
 
     <div class="container">
@@ -84,30 +131,38 @@
 
         <!-- Main component for a primary marketing message or call to action -->
         <div class="jumbotron">
-            <h1>About Us</h1>
+            <h1>Contact Information</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla omnis tempora culpa soluta quod commodi dolorem
                 harum placeat perspiciatis eius fugiat, architecto debitis itaque ullam aut neque nisi officiis illum.</p>
-            <p>
-                <a class="btn btn-lg btn-primary" href="sign_up" role="button">Join Us &raquo;</a>
-            </p>
-
-            <p>
-                <a class="btn btn-lg btn-primary" href="contact_us" role="button">Contact And Suggestions &raquo;</a>
-            </p>
         </div>
 
         <hr class="featurette-divider">
 
         <div class="row featurette">
             <div class="col-md-7">
-                <h2 class="featurette-heading">Who Are We? <span class="text-muted">Our Identity.</span></h2>
+                <h2 class="featurette-heading">Feedback & Suggestions <span class="text-muted">Make Us Better.</span></h2>
                 <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
                     commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
             </div>
-            <div class="col-md-5">
-                <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" src="{% static 'res/logo.jpg' %}"
-                    alt="Generic placeholder image">
-            </div>
+
+            <form class="form-signin">
+                <label for="inputEmail" class="sr-only">Email address</label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+
+                <label for="inputName" class="sr-only">Name</label>
+                <input type="text" id="inputEmail" class="form-control" placeholder="Name" required autofocus>
+
+                <label for="inputClass" class="sr-only">Class</label>
+                <input type="text" id="inputClass" class="form-control" placeholder="Class" required autofocus>
+
+                <label for="inputSection" class="sr-only">Section</label>
+                <input type="text" id="inputSection" class="form-control" placeholder="Section" required autofocus>
+
+                <label for="inputFeedback" class="sr-only">Feedback</label>
+                <textarea id="feedbackInput" class="form-control" placeholder="Feedback" cols="30" rows="5" required autofocus></textarea>
+
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Send</button>
+            </form>
         </div>
 
         <hr class="featurette-divider">

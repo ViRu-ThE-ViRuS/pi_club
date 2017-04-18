@@ -17,3 +17,6 @@ def sign_up(request):
 # redirect to about page
 def about(request):
     return render(request, 'main/about.html')
+
+def contact(request):
+    return render(request, 'main/contact.html')
