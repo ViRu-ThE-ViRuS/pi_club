@@ -20,3 +20,6 @@ def about(request):
 
 def contact(request):
     return render(request, 'main/contact.html')
+
+def videos_page(request):
+    return render(request, 'main/videos.html')
