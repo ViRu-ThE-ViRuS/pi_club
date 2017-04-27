@@ -23,3 +23,6 @@ def contact(request):
 
 def videos_page(request):
     return render(request, 'main/videos.html')
+
+def quiz_page(request):
+    return render(request, 'main/quiz.html')
