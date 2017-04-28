@@ -26,3 +26,6 @@ def videos_page(request):
 
 def quiz_page(request):
     return render(request, 'main/quiz.html')
+
+def list_of_quiz(request):
+    return render(request, 'main/list_of_quiz.html')
