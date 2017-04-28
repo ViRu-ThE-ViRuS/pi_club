@@ -1,0 +1,280 @@
+{% extends "main/header.html" %} {% block content %} {% load staticfiles %}
+
+<body>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <style>
+        /*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * Copyright 2014-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+        /*
+ * See the Getting Started docs for more information:
+ * http://getbootstrap.com/getting-started/#support-ie10-width
+ */
+
+        @-ms-viewport {
+            width: device-width;
+        }
+
+        @-o-viewport {
+            width: device-width;
+        }
+
+        @viewport {
+            width: device-width;
+        }
+    </style>
+
+    <style>
+        body {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .navbar-wrapper {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 20;
+        }
+        /* Flip around the padding for proper display in narrow viewports */
+
+        .navbar-wrapper>.container {
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        .navbar-wrapper .navbar {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .navbar-wrapper .navbar .container {
+            width: auto;
+        }
+
+        .form-signin {
+        max-width: 330px;
+        padding: 15px;
+        margin: 0 auto;
+    }
+
+    .form-quiz_level1 .form-quiz_level1-heading,
+    .form-quiz_level1 .checkbox {
+        margin-bottom: 10px;
+    }
+
+    .form-quiz_level1 .checkbox {
+        font-weight: normal;
+    }
+
+    .form-quiz_level1 .form-control {
+        position: relative;
+        height: auto;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .form-quiz_level1 .form-control:focus {
+        z-index: 2;
+    }
+
+    .form-quiz_level1 input[type="radio"] {
+        margin: 10px 0px 5px 0px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding: 10px;
+    }
+    </style>
+
+    <div class="container">
+        <!-- Static navbar -->
+        <nav class="navbar navbar-inverse navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                        aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                    <a class="navbar-brand" href="main">Pi</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>\
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!--/.container-fluid -->
+        </nav>
+
+
+        <!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <h1>Quiz Level 1</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut veritatis laudantium aliquam! Aut dignissimos ratione delectus
+                quo ut impedit ad, consectetur, cupiditate, nulla ipsa dolor, accusamus placeat! Inventore, corrupti, molestias.
+            </p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Section 1<span class="text-muted">Mental Maths.</span></h2>
+                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
+                    commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <form class="form-quiz_level1">
+            <h4 class="form-quiz_level1-heading">Question 1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium laboriosam vitae, ea quibusdam quos exercitationem
+                architecto, rerum magnam repellat assumenda rem quas tempore! Aperiam deleniti ad, nisi cupiditate sed doloremque!</p>
+            <input type="radio" name="question1" value="A"> Option A <br>
+            <input type="radio" name="question1" value="B"> Option B <br>
+            <input type="radio" name="question1" value="A"> Option C <br>
+            <input type="radio" name="question1" value="B"> Option D <br>
+            <br>
+
+            <h4 class="form-quiz_level1-heading">Question 2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium laboriosam vitae, ea quibusdam quos exercitationem
+                architecto, rerum magnam repellat assumenda rem quas tempore! Aperiam deleniti ad, nisi cupiditate sed doloremque!</p>
+            <input type="radio" name="question2" value="A"> Option A <br>
+            <input type="radio" name="question2" value="B"> Option B <br>
+            <input type="radio" name="question2" value="A"> Option C <br>
+            <input type="radio" name="question2" value="B"> Option D <br>
+            <br>
+
+            <h4 class="form-quiz_level1-heading">Question 3</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium laboriosam vitae, ea quibusdam quos exercitationem
+                architecto, rerum magnam repellat assumenda rem quas tempore! Aperiam deleniti ad, nisi cupiditate sed doloremque!</p>
+            <input type="radio" name="question3" value="A"> Option A <br>
+            <input type="radio" name="question3" value="B"> Option B <br>
+            <input type="radio" name="question3" value="A"> Option C <br>
+            <input type="radio" name="question3" value="B"> Option D <br>
+            <br>
+
+            <h4 class="form-quiz_level1-heading">Question 4</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium laboriosam vitae, ea quibusdam quos exercitationem
+                architecto, rerum magnam repellat assumenda rem quas tempore! Aperiam deleniti ad, nisi cupiditate sed doloremque!</p>
+            <input type="radio" name="question4" value="A"> Option A <br>
+            <input type="radio" name="question4" value="B"> Option B <br>
+            <input type="radio" name="question4" value="A"> Option C <br>
+            <input type="radio" name="question4" value="B"> Option D <br>
+            <br>
+
+            <h4 class="form-quiz_level1-heading">Question 5</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium laboriosam vitae, ea quibusdam quos exercitationem
+                architecto, rerum magnam repellat assumenda rem quas tempore! Aperiam deleniti ad, nisi cupiditate sed doloremque!</p>
+            <input type="radio" name="question5" value="A"> Option A <br>
+            <input type="radio" name="question5" value="B"> Option B <br>
+            <input type="radio" name="question5" value="A"> Option C <br>
+            <input type="radio" name="question5" value="B"> Option D <br>
+            <br>
+
+            <h4 class="form-quiz_level1-heading">Question 6</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium laboriosam vitae, ea quibusdam quos exercitationem
+                architecto, rerum magnam repellat assumenda rem quas tempore! Aperiam deleniti ad, nisi cupiditate sed doloremque!</p>
+            <input type="radio" name="question6" value="A"> Option A <br>
+            <input type="radio" name="question6" value="B"> Option B <br>
+            <input type="radio" name="question6" value="A"> Option C <br>
+            <input type="radio" name="question6" value="B"> Option D <br>
+            <br>
+
+            <h4 class="form-quiz_level1-heading">Question 7</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium laboriosam vitae, ea quibusdam quos exercitationem
+                architecto, rerum magnam repellat assumenda rem quas tempore! Aperiam deleniti ad, nisi cupiditate sed doloremque!</p>
+            <input type="radio" name="question7" value="A"> Option A <br>
+            <input type="radio" name="question7" value="B"> Option B <br>
+            <input type="radio" name="question7" value="A"> Option C <br>
+            <input type="radio" name="question7" value="B"> Option D <br>
+            <br>
+
+            <h4 class="form-quiz_level1-heading">Question 8</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium laboriosam vitae, ea quibusdam quos exercitationem
+                architecto, rerum magnam repellat assumenda rem quas tempore! Aperiam deleniti ad, nisi cupiditate sed doloremque!</p>
+            <input type="radio" name="question8" value="A"> Option A <br>
+            <input type="radio" name="question8" value="B"> Option B <br>
+            <input type="radio" name="question8" value="A"> Option C <br>
+            <input type="radio" name="question8" value="B"> Option D <br>
+            <br>
+
+            <h4 class="form-quiz_level1-heading">Question 9</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium laboriosam vitae, ea quibusdam quos exercitationem
+                architecto, rerum magnam repellat assumenda rem quas tempore! Aperiam deleniti ad, nisi cupiditate sed doloremque!</p>
+            <input type="radio" name="question9" value="A"> Option A <br>
+            <input type="radio" name="question9" value="B"> Option B <br>
+            <input type="radio" name="question9" value="A"> Option C <br>
+            <input type="radio" name="question9" value="B"> Option D <br>
+            <br>
+
+            <h4 class="form-quiz_level1-heading">Question 10</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium laboriosam vitae, ea quibusdam quos exercitationem
+                architecto, rerum magnam repellat assumenda rem quas tempore! Aperiam deleniti ad, nisi cupiditate sed doloremque!</p>
+            <input type="radio" name="question10" value="A"> Option A <br>
+            <input type="radio" name="question10" value="B"> Option B <br>
+            <input type="radio" name="question10" value="A"> Option C <br>
+            <input type="radio" name="question10" value="B"> Option D <br>
+            <br>
+
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+        </form>
+
+        <hr class="featurette-divider">
+
+        <!-- FOOTER -->
+        <footer>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>&copy; 2017 Pi, DPS Gurgaon.</p>
+        </footer>
+
+    </div>
+    <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        /*!
+         * IE10 viewport hack for Surface/desktop Windows 8 bug
+         * Copyright 2014-2015 Twitter, Inc.
+         * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+         */
+
+        // See the Getting Started docs for more information:
+        // http://getbootstrap.com/getting-started/#support-ie10-width
+
+        (function () {
+            'use strict';
+
+            if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+                var msViewportStyle = document.createElement('style')
+                msViewportStyle.appendChild(
+                    document.createTextNode(
+                        '@-ms-viewport{width:auto!important}'
+                    )
+                )
+                document.querySelector('head').appendChild(msViewportStyle)
+            }
+
+        })();
+    </script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+{% endblock %}
