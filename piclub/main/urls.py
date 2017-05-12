@@ -8,6 +8,7 @@ urlpatterns = [
     url(r'^sign_up', views.sign_up, name="sign_up"),
     url(r'^about', views.about, name="about"),
     url(r'^contact_us', views.contact, name="contact_us"),
-    url(r'videos', views.videos_page, name="videos"),
-    url(r'quiz', views.quiz_page, name="quiz")
+    url(r'^videos', views.videos_page, name="videos"),
+    url(r'^quiz', views.quiz_page, name="quiz"),
+    url(r'^list_of_quiz', views.list_of_quiz, name="list_of_quiz")
 ]
