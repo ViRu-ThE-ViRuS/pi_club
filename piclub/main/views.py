@@ -29,3 +29,6 @@ def quiz_page(request):
 
 def list_of_quiz(request):
     return render(request, 'main/list_of_quiz.html')
+
+def great_people(request):
+    return render(request, 'main/great_people.html')
