@@ -33,11 +33,6 @@
             background-color: #087F8C;
         }
 
-
-        .text-muted {
-            color: #fff;
-        }
-
         .navbar-wrapper {
             position: absolute;
             top: 0;
@@ -60,53 +55,6 @@
         .navbar-wrapper .navbar .container {
             width: auto;
         }
-
-        .form-signin {
-            max-width: 330px;
-            padding: 15px;
-            margin: 0 auto;
-        }
-
-        .form-signin .form-signin-heading,
-        .form-signin .checkbox {
-            margin-bottom: 10px;
-        }
-
-        .form-signin .checkbox {
-            font-weight: normal;
-        }
-
-        .form-signin .form-control {
-            position: relative;
-            height: auto;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            padding: 10px;
-            font-size: 16px;
-        }
-
-        .form-signin .form-control:focus {
-            z-index: 2;
-        }
-
-        .form-signin input[type="email"] {
-            margin-bottom: 1px;
-            border-bottom-right-radius: 0;
-            border-bottom-left-radius: 0;
-        }
-
-        .form-signin input[type="text"] {
-            margin-bottom: 1px;
-            border-bottom-right-radius: 0;
-            border-bottom-left-radius: 0;
-        }
-
-        .form-signin input[type="password"] {
-            margin: 10px 0px 5px 0px;
-            border-top-left-radius: 0;
-            border-top-right-radius: 0;
-        }
     </style>
 
     <div class="container">
@@ -126,7 +74,7 @@
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#">About</a></li>
-                        <li><a href="#">Blog</a></li>\
+                        <li><a href="#">Blog</a></li>
                     </ul>
                 </div>
                 <!--/.nav-collapse -->
@@ -136,41 +84,73 @@
 
 
         <!-- Main component for a primary marketing message or call to action -->
+        <style>
+            .jumbotron {
+                height: 500px;
+            }
+            .mClassPP {
+                padding: 15px;
+                margin: 5px;
+                margin-left: 300px;
+            }
+
+            .text-muted {
+                color: #fff;
+            }
+
+            .lead {
+                font-size: 25px;
+            }
+        </style>
         <div class="jumbotron">
-            <h1>Contact Information</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla omnis tempora culpa soluta quod commodi dolorem
-                harum placeat perspiciatis eius fugiat, architecto debitis itaque ullam aut neque nisi officiis illum.</p>
+            <h1>Alan Turing</h1>
+            <img src="{% static 'res/gp_01.jpg' %}" alt="" height="250px" width="250px" style="float: left">
+            <p class="mClassPP">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam enim accusamus, sit suscipit ullam necessitatibus reiciendis magni hic quam accusantium est nisi, rerum optio voluptas alias ad iure quisquam vel?
+            </p>
+            <p class="mClassPP">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam enim accusamus, sit suscipit ullam necessitatibus reiciendis magni hic quam accusantium est nisi, rerum optio voluptas alias ad iure quisquam vel?
+            </p>
         </div>
 
         <hr class="featurette-divider">
 
         <div class="row featurette">
             <div class="col-md-7">
-                <h2 class="featurette-heading">Feedback & Suggestions <span class="text-muted">Make Us Better.</span></h2>
+                <h2 class="featurette-heading">Life <span class="text-muted">How He Lived.</span></h2>
                 <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
                     commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
             </div>
-
-            <form class="form-signin">
-                <label for="inputEmail" class="sr-only">Email address</label>
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-
-                <label for="inputName" class="sr-only">Name</label>
-                <input type="text" id="inputEmail" class="form-control" placeholder="Name" required autofocus>
-
-                <label for="inputClass" class="sr-only">Class</label>
-                <input type="text" id="inputClass" class="form-control" placeholder="Class" required autofocus>
-
-                <label for="inputSection" class="sr-only">Section</label>
-                <input type="text" id="inputSection" class="form-control" placeholder="Section" required autofocus>
-
-                <label for="inputFeedback" class="sr-only">Feedback</label>
-                <textarea id="feedbackInput" class="form-control" placeholder="Feedback" cols="30" rows="5" required autofocus></textarea>
-
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Send</button>
-            </form>
         </div>
+        <hr class="featurette-divider">
 
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Death <span class="text-muted">How He Died.</span></h2>
+                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
+                    commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+        </div>
+        <hr class="featurette-divider">
+
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Achievements <span class="text-muted">What He Did.</span></h2>
+                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
+                    commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Work <span class="text-muted">His Work.</span></h2>
+                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
+                    commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+        </div>
         <hr class="featurette-divider">
 
         <!-- FOOTER -->
