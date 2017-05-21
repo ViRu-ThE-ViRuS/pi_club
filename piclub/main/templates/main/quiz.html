@@ -118,7 +118,6 @@
         }
 
         #mTable {
-            background-color: #DEF4C6;
             border-radius: 15px;
             text-align: center;
             height: 200px;
@@ -131,6 +130,12 @@
             border-style: solid;
             border-radius: 0px;
             border-width: 5px;
+        }
+
+        .v {
+            padding: 10px;
+            width: 150px;
+            height: 75px;
         }
     </style>
 
@@ -168,7 +173,9 @@
                     color: #fff;
                 }
             </style>
-            <center><h1>Challenge Yourself</h1></center>
+            <center>
+                <h1>Challenge Yourself</h1>
+            </center>
         </div>
 
         <!--<hr class="featurette-divider">-->
@@ -200,34 +207,25 @@
                     <li data-target="#myCarousel" data-slide-to="8"></li>
                     <li data-target="#myCarousel" data-slide-to="9"></li>
                 </ol>
-                <script>
-                    $(document).ready(function() {
-    var user = "none";
-    $(".user").click(function() {
-       user = $(this).attr("data-name");
-    });
 
-    $("#test").click(function() {
-       alert(user);
-    });
-    });
-                </script>
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
                         <h4 class="form-quiz_level1-heading">Question 1</h4>
-                        <p>If 60 apples are divided into two parts in the ratio 2:3, then the difference between those two parts is</p>
+                        <p>If 60 apples are divided into two parts in the ratio 2:3, then the difference between those two parts
+                            is
+                        </p>
 
                         <br>
 
                         <center>
                             <table id="mTable">
                                 <tr>
-                                    <td><button class="btn btn-default btn-lg" onclick="myFunction(A, 0)">10</button><br></td>
-                                    <td><button class="btn btn-default btn-lg" onclick="myFunction(B, 0)">12</button></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('A', 0)">10</button><br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('B', 0)">12</button></td>
                                 </tr>
                                 <tr>
-                                    <td><button class="btn btn-default btn-lg" onclick="myFunction(C, 0)">5</button></td>
-                                    <td><button class="btn btn-default btn-lg" onclick="myFunction(D, 0)">36</button></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('C', 0)">5</button></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('D', 0)">36</button></td>
                                 </tr>
                             </table>
                         </center>
@@ -242,12 +240,12 @@
                         <center>
                             <table id="mTable">
                                 <tr>
-                                    <td><input type="radio" class="radioMbutton" value="A"> 1 <br></td>
-                                    <td><input type="radio" class="radioMbutton" value="B"> 2 <br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('A', 1)">1</button><br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('B', 1)">2</button></td>
                                 </tr>
                                 <tr>
-                                    <td><input type="radio" class="radioMbutton" value="C"> 3 <br></td>
-                                    <td><input type="radio" class="radioMbutton" value="D"> -1 <br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('A', 1)">3</button><br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('B', 1)">-1</button></td>
                                 </tr>
                             </table>
                         </center>
@@ -263,12 +261,12 @@
                         <center>
                             <table id="mTable">
                                 <tr>
-                                    <td><input type="radio" class="radioMbutton" value="A"> 7/25 <br></td>
-                                    <td><input type="radio" class="radioMbutton" value="B"> 9/34 <br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('A', 2)">7/25</button><br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('B', 2)">9/34</button></td>
                                 </tr>
                                 <tr>
-                                    <td><input type="radio" class="radioMbutton" value="C"> 2/59 <br></td>
-                                    <td><input type="radio" class="radioMbutton" value="D"> 46/7 <br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('A', 2)">2/59</button><br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('B', 2)">46/7</button></td>
                                 </tr>
                             </table>
                         </center>
@@ -284,12 +282,12 @@
                         <center>
                             <table id="mTable">
                                 <tr>
-                                    <td><input type="radio" class="radioMbutton" value="A"> 44 x 4/9 <br></td>
-                                    <td><input type="radio" class="radioMbutton" value="B"> 12 x 3/2 <br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('A', 3)">44 x 4/9</button><br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('B', 3)">12 x 3/2</button></td>
                                 </tr>
                                 <tr>
-                                    <td><input type="radio" class="radioMbutton" value="C"> 65 x 1/2 <br></td>
-                                    <td><input type="radio" class="radioMbutton" value="D"> None Of These <br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('A', 3)">65 x 1/2</button><br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('B', 3)">None Of These</button></td>
                                 </tr>
                             </table>
                         </center>
@@ -304,12 +302,12 @@
                         <center>
                             <table id="mTable">
                                 <tr>
-                                    <td><input type="radio" class="radioMbutton" value="A"> 5 <br></td>
-                                    <td><input type="radio" class="radioMbutton" value="B"> 25 <br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('A', 4)">5</button><br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('B', 4)">25</button></td>
                                 </tr>
                                 <tr>
-                                    <td><input type="radio" class="radioMbutton" value="C"> -25 <br></td>
-                                    <td><input type="radio" class="radioMbutton" value="D"> 30 <br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('A', 4)">-25</button><br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('B', 4)">30</button></td>
                                 </tr>
                             </table>
                         </center>
@@ -324,12 +322,12 @@
                         <center>
                             <table id="mTable">
                                 <tr>
-                                    <td><input type="radio" class="radioMbutton" value="A"> 10 <br></td>
-                                    <td><input type="radio" class="radioMbutton" value="B"> 10.2 <br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('A', 5)">10</button><br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('B', 5)">10.2</button></td>
                                 </tr>
                                 <tr>
-                                    <td><input type="radio" class="radioMbutton" value="C"> 102 <br></td>
-                                    <td><input type="radio" class="radioMbutton" value="D"> None Of These <br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('A', 5)">102</button><br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('B', 5)">None Of These</button></td>
                                 </tr>
                             </table>
                         </center>
@@ -344,12 +342,12 @@
                         <center>
                             <table id="mTable">
                                 <tr>
-                                    <td><input type="radio" class="radioMbutton" value="A"> 2a <br></td>
-                                    <td><input type="radio" class="radioMbutton" value="B"> 5a <br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('A', 6)">2a</button><br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('B', 6)">5a</button></td>
                                 </tr>
                                 <tr>
-                                    <td><input type="radio" class="radioMbutton" value="C"> -11a <br></td>
-                                    <td><input type="radio" class="radioMbutton" value="D"> 11a <br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('A', 6)">-11a</button><br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('B', 6)">11a</button></td>
                                 </tr>
                             </table>
                         </center>
@@ -364,12 +362,12 @@
                         <center>
                             <table id="mTable">
                                 <tr>
-                                    <td><input type="radio" class="radioMbutton" value="A"> -8 <br></td>
-                                    <td><input type="radio" class="radioMbutton" value="B"> -5 <br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('A', 7)">-8</button><br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('B', 7)">-5</button></td>
                                 </tr>
                                 <tr>
-                                    <td><input type="radio" class="radioMbutton" value="C"> -9 <br></td>
-                                    <td><input type="radio" class="radioMbutton" value="D"> 8 <br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('A', 7)">-9</button><br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('B', 7)">8</button></td>
                                 </tr>
                             </table>
                         </center>
@@ -384,12 +382,12 @@
                         <center>
                             <table id="mTable">
                                 <tr>
-                                    <td><input type="radio" class="radioMbutton" value="A"> 60, 75 <br></td>
-                                    <td><input type="radio" class="radioMbutton" value="B"> 50, 65 <br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('A', 8)">60, 75</button><br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('B', 8)">50, 65</button></td>
                                 </tr>
                                 <tr>
-                                    <td><input type="radio" class="radioMbutton" value="C"> 70, 95 <br></td>
-                                    <td><input type="radio" class="radioMbutton" value="D"> 65, 75 <br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('A', 8)">70, 95</button><br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('B', 8)">65, 75</button></td>
                                 </tr>
                             </table>
                         </center>
@@ -397,20 +395,22 @@
 
                     <div class="item">
                         <h4 class="form-quiz_level1-heading">Question 10</h4>
-                        <p>A car can cover a distance of 522 km on 36 liters of petrol. How far can it travel on 14 liters of petrol?</p>
+                        <p>A car can cover a distance of 522 km on 36 liters of petrol. How far can it travel on 14 liters of
+                            petrol?
+                        </p>
 
                         <br>
 
                         <center>
                             <table id="mTable">
-                                    <tr>
-                                        <td><input id="10a" type="radio" name="10" class="radioMbutton" value="A"> 213 km <br></td>
-                                        <td><input type="radio" name="10" class="radioMbutton" value="B"> 223 km <br></td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="radio" name="10" class="radioMbutton" value="C"> 203 km <br></td>
-                                        <td><input type="radio" name="10" class="radioMbutton" value="D"> 302 km <br></td>
-                                    </tr>
+                                <tr>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('A', 9)">213 km</button><br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('B', 9)">223 km</button></td>
+                                </tr>
+                                <tr>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('A', 9)">203 km</button><br></td>
+                                    <td><button class="btn btn-default btn-lg v" onClick="myFunction('B', 9)">302 km</button></td>
+                                </tr>
                             </table>
                         </center>
                     </div>
@@ -445,6 +445,17 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script>
+        var answers = new Array("", "", "", "", "", "", "", "", "", );
+        $(document).ready(function () {
+
+        });
+
+        function myFunction(choice, question) {
+            answers[question] = choice;
+        }
+    </script>
     <script>
         /*!
          * IE10 viewport hack for Surface/desktop Windows 8 bug
