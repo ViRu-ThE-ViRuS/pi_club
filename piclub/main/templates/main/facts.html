@@ -55,6 +55,23 @@
         .navbar-wrapper .navbar .container {
             width: auto;
         }
+
+        .carousel {
+            height: 750px;
+        }
+        /* Since positioning the image, we need to help out the caption */
+
+        .carousel-caption {
+            z-index: 10;
+        }
+        /* Declare heights because of positioning of img element */
+
+        .carousel .item {
+            height: 750px;
+            background: #087F8C;
+            color: #000;
+            padding: 25px;
+        }
     </style>
 
     <div class="container">
@@ -88,61 +105,40 @@
 
 
         <!-- Main component for a primary marketing message or call to action -->
-        <style>
-            .jumbotron {
-                height: 500px;
-            }
-
-            .mClassPP {
-                padding: 15px;
-                margin: 5px;
-                margin-left: 300px;
-                margin-top: 100px;
-            }
-
-            .text-muted {
-                color: #fff;
-            }
-
-            .lead {
-                font-size: 25px;
-            }
-
-            .mfacts {
-                padding: 10px;
-                background-color: #faebd7;
-                font-size: 35px;
-                border-radius: 5px;
-                border-style: solid;
-                border-width: 1px;
-                text-align: center;
-            }
-        </style>
         <div class="jumbotron">
-            <h1>Facts Empower</h1>
+            <!--<h1>Facts Empower</h1>
             <img src="{% static 'res/math_13.jpg' %}" alt="" height="250px" width="250px" style="float: left">
             <p class="mClassPP">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam enim accusamus, sit suscipit ullam necessitatibus reiciendis
                 magni hic quam accusantium est nisi, rerum optio voluptas alias ad iure quisquam vel?
-            </p>
-        </div>
+            </p>-->
 
-        <hr class="featurette-divider">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                </ol>
 
-        <div class="row featurette">
-            <p class="mfacts">If you write out pi to two decimal places, backwards it spells "pie".</p>
-        </div>
-        <hr class="featurette-divider">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <h4 class="form-quiz_level1-heading">Fact</h4>
+                    </div>
 
-        <div class="row featurette">
-            <p class="mfacts">If you write out pi to two decimal places, backwards it spells "pie".</p>
-        </div>
-        <hr class="featurette-divider">
+                    <div class="item">
+                        <h4 class="form-quiz_level1-heading">Fact</h4>
+                    </div>
+                </div>
 
-        <div class="row featurette">
-            <p class="mfacts">If you write out pi to two decimal places, backwards it spells "pie".</p>
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+            </div>
         </div>
-        <hr class="featurette-divider">
 
         <!-- FOOTER -->
         <footer>
