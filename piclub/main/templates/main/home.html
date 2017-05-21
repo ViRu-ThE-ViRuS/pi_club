@@ -10,7 +10,7 @@
         padding-bottom: 40px;
         color: #000;
         background: #fff;
-        background-color: #087F8C;
+        background-color: #1C7C54;
     }
     /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -166,9 +166,6 @@
                         <li><a href="sign_up">Sign Up</a></li>
                         <li><a href="about">About</a></li>
                         <li><a href="contact_us">Contact</a></li>
-                        <!--<li><a href="videos">Videos</a></li>-->
-                        <!--<li><a href="quiz">Quiz</a></li>-->
-                        <!--<li><a href="list_of_quiz">Quiz[s]</a></li>-->
                     </ul>
                 </div>
             </div>
@@ -270,7 +267,7 @@
         <div class="col-lg-4">
             <img class="img-circle" src="{% static 'res/math_10.jpg' %}" alt="Generic placeholder image" width="140" height="140">
             <h2>Facts</h2>
-            <p><a class="btn btn-default" href="#" role="button">GO &raquo;</a></p>
+            <p><a class="btn btn-default" href="facts" role="button">GO &raquo;</a></p>
         </div>
 
         <div class="col-lg-4">
@@ -286,63 +283,8 @@
         </div>
         <!-- /.col-lg-4 -->
     </div>
-
-    <!-- /.row -->
-
-
-    <!-- START THE FEATURETTES -->
-
-    <!--<hr class="featurette-divider">-->
-    <!--
-    <div class="row featurette">
-        <div class="col-md-7">
-            <h2 class="featurette-heading">Service Before Self. <span class="text-muted">Our Motto.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
-                commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" src="{% static 'res/logo.jpg' %}" alt="Generic placeholder image">
-        </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
-                commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" src="{% static 'res/logo.jpg' %}" alt="Generic placeholder image">
-        </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-        <div class="col-md-7">
-            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
-                commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="{% static 'res/logo.jpg' %}">
-        </div>
-    </div>-->
-
-    <!--<hr class="featurette-divider">-->
-
-    <!-- /END THE FEATURETTES -->
-
-
-    <!-- FOOTER -->
-    <!--<footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2017 Pi, DPS Gurgaon.</p>
-    </footer>-->
-
 </div>
+<!-- /.container -->
 
 <style>
     .mmHeading {
@@ -354,12 +296,13 @@
         font-family: "Times New Roman", "Arial Black";
     }
 </style>
+
 <div>
     <center>
         <h1 class="mmHeading">The only way to learn Mathematics is to do Mathematics</h1>
     </center>
 </div>
-<!-- /.container -->
+
 
 <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -397,15 +340,15 @@
 <script>
     /*!
 
-                                    Holder - client side image placeholders
-                                    Version 2.6.0+51ebp
-                                    © 2015 Ivan Malopinsky - http://imsky.co
+                                                Holder - client side image placeholders
+                                                Version 2.6.0+51ebp
+                                                © 2015 Ivan Malopinsky - http://imsky.co
 
-                                    Site:     http://holderjs.com
-                                    Issues:   https://github.com/imsky/holder/issues
-                                    License:  http://opensource.org/licenses/MIT
+                                                Site:     http://holderjs.com
+                                                Issues:   https://github.com/imsky/holder/issues
+                                                License:  http://opensource.org/licenses/MIT
 
-                                    */
+                                                */
     ! function (a, b) {
         "object" == typeof exports && "object" == typeof module ? module.exports = b() : "function" == typeof define &&
             define.amd ? define(b) : "object" == typeof exports ? exports.Holder = b() : a.Holder = b()

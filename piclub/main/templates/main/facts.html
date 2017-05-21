@@ -33,10 +33,6 @@
             background-color: #1C7C54;
         }
 
-        .text-muted {
-            color: #fff;
-        }
-
         .navbar-wrapper {
             position: absolute;
             top: 0;
@@ -58,6 +54,23 @@
 
         .navbar-wrapper .navbar .container {
             width: auto;
+        }
+
+        .carousel {
+            height: 750px;
+        }
+        /* Since positioning the image, we need to help out the caption */
+
+        .carousel-caption {
+            z-index: 10;
+        }
+        /* Declare heights because of positioning of img element */
+
+        .carousel .item {
+            height: 750px;
+            background: #087F8C;
+            color: #000;
+            padding: 25px;
         }
     </style>
 
@@ -93,23 +106,34 @@
 
         <!-- Main component for a primary marketing message or call to action -->
         <div class="jumbotron">
-            <h1>Interesting</h1>
-            <p>
-                <video src="{% static 'res/math_video_01.mp4' %}" autoplay controls style="height: 25%; width: 100%;"></video>
-            </p>
-        </div>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                </ol>
 
-        <hr class="featurette-divider">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <h4 class="form-quiz_level1-heading">Fact</h4>
+                    </div>
 
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">Feedback & Suggestions <span class="text-muted">Make Us Better.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
-                    commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    <div class="item">
+                        <h4 class="form-quiz_level1-heading">Fact</h4>
+                    </div>
+
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span></a>
+                </div>
             </div>
         </div>
         <hr class="featurette-divider">
-
+        
         <!-- FOOTER -->
         <footer>
             <p class="pull-right"><a href="#">Back to top</a></p>

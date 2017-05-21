@@ -32,3 +32,6 @@ def list_of_quiz(request):
 
 def great_people(request):
     return render(request, 'main/great_people.html')
+
+def facts(request):
+    return render(request, 'main/facts.html')
