@@ -13,5 +13,6 @@ urlpatterns = [
     url(r'^quiz', views.quiz_page, name="quiz"),
     url(r'^list_of_quiz', views.list_of_quiz, name="list_of_quiz"),
     url(r'^great_people', views.great_people, name="great_people"),
-    url(r'^facts', views.facts, name="facts")
+    url(r'^facts', views.facts, name="facts"),
+    url(r'stories', views.stories, name="stories")
 ]
