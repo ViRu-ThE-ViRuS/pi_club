@@ -35,3 +35,6 @@ def great_people(request):
 
 def facts(request):
     return render(request, 'main/facts.html')
+
+def stories(request):
+    return render(request, 'main/stories.html')

@@ -1,0 +1,169 @@
+{% extends "main/header.html" %} {% block content %} {% load staticfiles %}
+
+<body>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <style>
+        /*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * Copyright 2014-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+        /*
+ * See the Getting Started docs for more information:
+ * http://getbootstrap.com/getting-started/#support-ie10-width
+ */
+
+        @-ms-viewport {
+            width: device-width;
+        }
+
+        @-o-viewport {
+            width: device-width;
+        }
+
+        @viewport {
+            width: device-width;
+        }
+    </style>
+
+    <style>
+        body {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: #1C7C54;
+        }
+
+        .navbar-wrapper {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 20;
+        }
+        /* Flip around the padding for proper display in narrow viewports */
+
+        .navbar-wrapper>.container {
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        .navbar-wrapper .navbar {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .navbar-wrapper .navbar .container {
+            width: auto;
+        }
+    </style>
+
+    <div class="container">
+        <!-- Static navbar -->
+        <nav class="navbar navbar-inverse navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                        aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                    <a class="navbar-brand" href="main">Pi</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="home">Home</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="login">Login</a></li>
+                        <li><a href="sign_up">Sign Up</a></li>
+                        <li><a href="about">About</a></li>
+                        <li><a href="contact_us">Contact</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!--/.container-fluid -->
+        </nav>
+
+
+        <!-- Main component for a primary marketing message or call to action -->
+        <style>
+            .jumbotron {
+                padding: 10px;
+                margin: 10px;
+            }
+
+            .text-muted {
+                color: #fff;
+            }
+
+            .lead {
+                font-size: 25px;
+            }
+        </style>
+        <div class="jumbotron">
+            <h1>Story Of Pi</h1>
+        </div>
+
+        <hr class="featurette-divider">
+
+
+
+         <!--FOOTER 
+        <footer>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>&copy; 2017 Pi, DPS Gurgaon.</p>
+        </footer>-->
+    </div>
+    <!-- /container -->
+
+
+        <style>
+            object {
+                padding: 10px;
+                margin: 10px;
+                align-self: center;
+            }
+        </style>
+
+        <div class="row featurette">
+            <center>
+                <object width="1000" height="1100" data="{% static 'res/PI.pdf' %}" />
+            </center>
+        </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        /*!
+         * IE10 viewport hack for Surface/desktop Windows 8 bug
+         * Copyright 2014-2015 Twitter, Inc.
+         * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+         */
+
+        // See the Getting Started docs for more information:
+        // http://getbootstrap.com/getting-started/#support-ie10-width
+
+        (function () {
+            'use strict';
+
+            if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+                var msViewportStyle = document.createElement('style')
+                msViewportStyle.appendChild(
+                    document.createTextNode(
+                        '@-ms-viewport{width:auto!important}'
+                    )
+                )
+                document.querySelector('head').appendChild(msViewportStyle)
+            }
+
+        })();
+    </script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+{% endblock %}

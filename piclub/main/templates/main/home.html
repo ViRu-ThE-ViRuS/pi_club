@@ -2,19 +2,12 @@
 <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
 
 <style>
-    /* GLOBAL STYLES
--------------------------------------------------- */
-    /* Padding below the footer and lighter body text */
-
     body {
         padding-bottom: 40px;
         color: #000;
         background: #fff;
         background-color: #1C7C54;
     }
-    /* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
-    /* Special class on .container surrounding .navbar, used for positioning it into place. */
 
     .navbar-wrapper {
         position: absolute;
@@ -23,7 +16,6 @@
         left: 0;
         z-index: 20;
     }
-    /* Flip around the padding for proper display in narrow viewports */
 
     .navbar-wrapper>.container {
         padding-right: 0;
@@ -38,9 +30,6 @@
     .navbar-wrapper .navbar .container {
         width: auto;
     }
-    /* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-    /* Carousel base class */
 
     .carousel {
         height: 500px;
@@ -53,12 +42,10 @@
         height: 500px;
         width: 15%;
     }
-    /* Since positioning the image, we need to help out the caption */
 
     .carousel-caption {
         z-index: 10;
     }
-    /* Declare heights because of positioning of img element */
 
     .carousel .item {
         height: 500px;
@@ -72,9 +59,6 @@
         min-width: 100%;
         height: 500px;
     }
-    /* MARKETING CONTENT
--------------------------------------------------- */
-    /* Center align the text within the three columns below the carousel */
 
     .marketing .col-lg-4 {
         margin-bottom: 20px;
@@ -89,25 +73,18 @@
         margin-right: 10px;
         margin-left: 10px;
     }
-    /* Featurettes
-------------------------- */
 
     .featurette-divider {
         margin: 80px 0;
-        /* Space out the Bootstrap <hr> more */
     }
-    /* Thin out the marketing headings */
 
     .featurette-heading {
         font-weight: 300;
         line-height: 1;
         letter-spacing: -1px;
     }
-    /* RESPONSIVE CSS
--------------------------------------------------- */
 
     @media (min-width: 768px) {
-        /* Navbar positioning foo */
         .navbar-wrapper {
             margin-top: 20px;
         }
@@ -120,12 +97,10 @@
             padding-left: 0;
         }
 
-        /* The navbar becomes detached from the top, so we round the corners */
         .navbar-wrapper .navbar {
             border-radius: 4px;
         }
 
-        /* Bump up size of carousel content */
         .carousel-caption p {
             margin-bottom: 20px;
             font-size: 21px;
@@ -175,25 +150,13 @@
 </div>
 
 <center>
-    <!-- Carousel
-    ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <!--<ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>-->
         <div class="carousel-inner" role="listbox">
             <div class="item active" style="background-image: 'dps.jpg'">
                 <img class="first-slide" src="{% static 'res/dps.jpg' %}" alt="First slide">
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>Pi SQUAD</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat ad vitae nobis quaerat nam unde
-                            voluptatum, quisquam perferendis illo nemo quas debitis, sint doloremque sequi! Ea ad, obcaecati?
-                            Voluptas, repellat..</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
                     </div>
                 </div>
             </div>
@@ -202,9 +165,6 @@
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>Pi SQUAD</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at
-                            eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
                     </div>
                 </div>
             </div>
@@ -213,9 +173,6 @@
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>Pi SQUAD</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at
-                            eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
                     </div>
                 </div>
             </div>
@@ -229,40 +186,31 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <!-- /.carousel -->
 </center>
 
 <img src="{% static 'res/logo_02.jpg' %}" alt="" class="mmPhoto">
 
-<!-- Marketing messaging and featurettes
-    ================================================== -->
-<!-- Wrap the rest of the page in another container to center all the content. -->
-
 <div class="container marketing">
-
-    <!-- Three columns of text below the carousel -->
     <div class="row">
         <div class="col-lg-4">
             <img class="img-circle" src="{% static 'res/math_04.jpg' %}" alt="Generic placeholder image" width="140" height="140">
             <h2>Great Mathematicians</h2>
             <a class="btn btn-default" href="great_people" role="button">GO &raquo;</a></p>
         </div>
-        <!-- /.col-lg-4 -->
+
         <div class="col-lg-4">
             <img class="img-circle" src="{% static 'res/math_08.jpg' %}" alt="Generic placeholder image" width="140" height="140">
             <h2>Puzzles</h2>
             <p><a class="btn btn-default" href="#" role="button">GO &raquo;</a></p>
         </div>
-        <!-- /.col-lg-4 -->
+
         <div class="col-lg-4">
             <img class="img-circle" src="{% static 'res/math_09.jpg' %}" alt="Generic placeholder image" width="140" height="140">
             <h2>Quiz</h2>
             <a class="btn btn-default" href="list_of_quiz" role="button">GO &raquo;</a></p>
         </div>
-        <!-- /.col-lg-4 -->
     </div>
 
-    <!-- Three columns of text below the carousel -->
     <div class="row">
         <div class="col-lg-4">
             <img class="img-circle" src="{% static 'res/math_10.jpg' %}" alt="Generic placeholder image" width="140" height="140">
@@ -273,7 +221,7 @@
         <div class="col-lg-4">
             <img class="img-circle" src="{% static 'res/math_11.jpeg' %}" alt="Generic placeholder image" width="140" height="140">
             <h2>Stories</h2>
-            <a class="btn btn-default" href="#" role="button">GO &raquo;</a></p>
+            <a class="btn btn-default" href="stories" role="button">GO &raquo;</a></p>
         </div>
 
         <div class="col-lg-4">
@@ -281,10 +229,8 @@
             <h2>Videos</h2>
             <a class="btn btn-default" href="videos" role="button">GO &raquo;</a></p>
         </div>
-        <!-- /.col-lg-4 -->
     </div>
 </div>
-<!-- /.container -->
 
 <style>
     .mmHeading {
@@ -303,24 +249,12 @@
     </center>
 </div>
 
-
-<!-- Bootstrap core JavaScript
-    ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 {% load staticfiles %}
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
 <script>
-    /*!
-     * IE10 viewport hack for Surface/desktop Windows 8 bug
-     * Copyright 2014-2015 Twitter, Inc.
-     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-     */
-
-    // See the Getting Started docs for more information:
-    // http://getbootstrap.com/getting-started/#support-ie10-width
-
     (function () {
         'use strict';
 
@@ -337,18 +271,7 @@
     })();
 </script>
 
-<script>
-    /*!
-
-                                                Holder - client side image placeholders
-                                                Version 2.6.0+51ebp
-                                                © 2015 Ivan Malopinsky - http://imsky.co
-
-                                                Site:     http://holderjs.com
-                                                Issues:   https://github.com/imsky/holder/issues
-                                                License:  http://opensource.org/licenses/MIT
-
-                                                */
+<!--<script>
     ! function (a, b) {
         "object" == typeof exports && "object" == typeof module ? module.exports = b() : "function" == typeof define &&
             define.amd ? define(b) : "object" == typeof exports ? exports.Holder = b() : a.Holder = b()
@@ -1360,5 +1283,5 @@
             }, a.exports = d
         }])
     });
-</script>
+</script>-->
 {% endblock %}
